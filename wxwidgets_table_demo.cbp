@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="wxwidgets_table_demo" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release">
+				<Option output="bin/Release/wxwidgets_table_demo" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+			</Target>
+		</Build>
+		<Unit filename="resource.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="wxsmith/wxwidgets_table_demodialog.wxs" />
+		<Unit filename="wxwidgets_table_demoApp.cpp" />
+		<Unit filename="wxwidgets_table_demoApp.h" />
+		<Unit filename="wxwidgets_table_demoMain.cpp" />
+		<Unit filename="wxwidgets_table_demoMain.h" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+			<wxsmith version="1">
+				<gui name="wxWidgets" src="wxwidgets_table_demoApp.cpp" main="wxwidgets_table_demoDialog" init_handlers="necessary" language="CPP" />
+				<resources>
+					<wxDialog wxs="wxsmith/wxwidgets_table_demodialog.wxs" src="wxwidgets_table_demoMain.cpp" hdr="wxwidgets_table_demoMain.h" fwddecl="0" i18n="1" name="wxwidgets_table_demoDialog" language="CPP" />
+				</resources>
+			</wxsmith>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
