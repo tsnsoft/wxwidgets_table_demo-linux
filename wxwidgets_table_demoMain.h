@@ -28,8 +28,6 @@ class wxwidgets_table_demoDialog: public wxDialog
     private:
 
         //(*Handlers(wxwidgets_table_demoDialog)
-        void OnQuit(wxCommandEvent& event);
-        void OnAbout(wxCommandEvent& event);
         void OnButton1Click(wxCommandEvent& event);
         void OnButton2Click(wxCommandEvent& event);
         //*)
