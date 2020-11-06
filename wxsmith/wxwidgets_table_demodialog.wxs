@@ -10,6 +10,7 @@
 				<object class="wxGrid" name="ID_GRID1" variable="Grid1" member="yes">
 					<cols>5</cols>
 					<rows>7</rows>
+					<extra_code>Grid1-&gt;EnableDragGridSize(false);</extra_code>
 				</object>
 				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
 				<border>5</border>
