@@ -69,6 +69,7 @@ wxwidgets_table_demoDialog::wxwidgets_table_demoDialog(wxWindow* parent,wxWindow
     BoxSizer1 = new wxBoxSizer(wxVERTICAL);
     Grid1 = new wxGrid(this, ID_GRID1, wxDefaultPosition, wxDefaultSize, 0, _T("ID_GRID1"));
     Grid1->CreateGrid(7,5);
+    Grid1->EnableDragGridSize(false);
     Grid1->EnableEditing(true);
     Grid1->EnableGridLines(true);
     Grid1->SetDefaultCellFont( Grid1->GetFont() );
@@ -144,3 +145,9 @@ void wxwidgets_table_demoDialog::OnButton2Click(wxCommandEvent& event)
     StaticText1->SetLabel("Сумма = " + foo.str()); // Выдадим в компонент значение суммы
 }
 
+
+void wxwidgets_table_demoDialog::OnClose(wxCloseEvent& event)
+{
+    Close(0);
+  //  event.Skip();
+}

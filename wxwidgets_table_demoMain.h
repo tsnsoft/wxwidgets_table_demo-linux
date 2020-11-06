@@ -30,6 +30,7 @@ class wxwidgets_table_demoDialog: public wxDialog
         //(*Handlers(wxwidgets_table_demoDialog)
         void OnButton1Click(wxCommandEvent& event);
         void OnButton2Click(wxCommandEvent& event);
+        void OnClose(wxCloseEvent& event);
         //*)
 
         //(*Identifiers(wxwidgets_table_demoDialog)
